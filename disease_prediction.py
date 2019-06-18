@@ -101,15 +101,35 @@ def disease_prediction(list):
     dict_s['Flowering']=[0,1,0,0,0]
     dict_s['Fruiting']=[0,0,1,0,0]
 
-    result = []
+    temp = []
     i=0
-    # for s in Stage:
-    #     list = [[74.5,26.2,s],[74.67,26.4,s],[73.96,26.6,s],[74.21,26.4,s],[73.21,26.4,s],[73.21,26.6,s],[75.29,26.2,s]]
     for var in list:
         l=dict_s[var[2]]
         var.pop(2)
         var = var + l
-        result.insert(i,clf1.predict_proba(np.asarray(var).reshape(1,-1)))   
-    return (result,dict)
+        temp.insert(i,clf1.predict_proba(np.asarray(var).reshape(1,-1)))
+    i=0
+    d1=[]
+    d2=[]
+    d3=[]
+    d4=[]
+    d5=[]
+    d6=[]
+    for var in temp:
+        d1.insert(i,var[0][0])
+        d2.insert(i,var[0][1])
+        d3.insert(i,var[0][2])
+        d4.insert(i,var[0][3])
+        d5.insert(i,var[0][4])
+        d6.insert(i,var[0][5])
+        i=i+1
+    result = []
+    result.insert(0,d1)
+    result.insert(1,d2)
+    result.insert(2,d3)
+    result.insert(3,d4)
+    result.insert(4,d5)
+    result.insert(5,d6)
+
 
     # plt.show()

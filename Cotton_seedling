@@ -35,8 +35,7 @@ def Cotton_seedling():
     print(df4.shape)
     df5 = pd.DataFrame(data=(list(itertools.product(Rh5,T5,[4]))),columns=['Rh', 'T', 'Disease'])
     print(df5.shape)
-
-
+            
     df = df1.append(df2.append(df4.append(df5, ignore_index=True),ignore_index=True),ignore_index=True)
 
 

@@ -34,7 +34,6 @@ def Cotton_all_others():
 
     df = df1.append(df3.append(df5, ignore_index=True), ignore_index=True)
 
-
     features = ['Rh','T']
     df = df.sample(frac=1).reset_index(drop = True)
 

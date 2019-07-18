@@ -1,5 +1,7 @@
 def predict(Crop, Stage, l):
-
+    
+    
+    
     if(Crop=='Chilli'):
         if(Stage=='Seedling'):
             for var in l:

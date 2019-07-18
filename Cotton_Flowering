@@ -25,7 +25,6 @@ def Cotton_Flowering():
       T5 = np.arange(25,35,0.1)
 
 
-
       dict = { 0:'Fusarium Wilt', 1:'Root Rot', 2:'Anthracnose', 3:'Grey Mildew', 4:'Alternia Leaf Spot', 5:'Aerolate', 6:'Bacterial Blight'}
       Stage = ['Branching', 'Flowering', 'Fruiting','Seedling', 'Stem Elongation']
 

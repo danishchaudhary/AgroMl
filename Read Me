@@ -1,0 +1,12 @@
+    1. Disease Prediction Model: Predicting the relative probabilities of various diseases which might affect a crop in near future taking a basis of environmental conditions like Relative Humidity, Temperature and Stages of Crops.
+
+    • Preparation of Dataset: Classifying certain Diseases which can occur on a particular stage of crop (Done using if-else statements). Converting ranges of boundary conditions (provided by Agronomy Team) which are favourable to a particular disease, to discrete numerical values using Python Libraries like Numpy, Pandas etc. Visualising dataset using Principal Component Analysis (PCA) and Python Libraries Matplotlib, Scipy etc. Pre-processing the above created Labelled Dataset using Sci-Kit Libraries to ease the process of Training. 
+    • Training a Classifier Model: Training a SVC classifier model using ‘Radial Basis Function’ Kernel and ‘One-over-rest’ Decision Function Shape on above created Training Dataset for prediction purposes using Python Library Sci-Kit Learn on Google Cloud Servers. 
+    • Prediction: Collaborated with Agronomy team to verify predictions made on Fresh examples. The accuracy varied depending upon the Crop and Stage. Average accuracy was found to be approximately 75%. 
+
+    2. Disease Classification Model: Detection of Disease with which a crop might be affected using coloured images of leaves of Disease-Affected crops.
+
+    • Preparation of Dataset: Built a labelled training Dataset consisting of over 60,000 images of 38 different labels (many crops, many diseases). 
+    • Building a CNN Model:  Used the concepts of Transfer Learning on pre-trained Inception-V3 Mode (weights made available on Keras Documentation Page), to extract important features of Images which can be useful for Classification task. Added three extra hidden layers with 512, 256 and 128 hidden unity respectively, to learn more complicated shapes and functions Finally, a SoftMax layer of 38 hidden units was added for classification purpose. Model was built using Deep-Learning Library Keras as Frontend and Tensorflow as Backend. Various techniques like Image Preprocessing and Dropout were also implemented to avoid Over-fitting of Dataset.
+    • Training the Model: The above built model was trained on the training dataset using RMSprop Optimizer and 100 epochs. Training was done on Google Server to harness the power of GPUs.
+    • Prediction: Probabilities of various Diseases were then predicted on Freshly Built Test Dataset. An accuracy score of approximately 70% was achieved on Test Dataset.

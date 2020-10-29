@@ -1,0 +1,6 @@
+# AgroMl
+ 1. Disease Prediction Model: Predicting the relative probabilities of various diseases which might affect a crop in near future taking a basis of environmental conditions like Relative Humidity, Temperature and Stages of Crops.
+
+    • Preparation of Dataset: Classifying certain Diseases which can occur on a particular stage of crop (Done using if-else statements). Converting ranges of boundary conditions (provided by Agronomy Team) which are favourable to a particular disease, to discrete numerical values using Python Libraries like Numpy, Pandas etc. Visualising dataset using Principal Component Analysis (PCA) and Python Libraries Matplotlib, Scipy etc. Pre-processing the above created Labelled Dataset using Sci-Kit Libraries to ease the process of Training. 
+    • Training a Classifier Model: Training a SVC classifier model using ‘Radial Basis Function’ Kernel and ‘One-over-rest’ Decision Function Shape on above created Training Dataset for prediction purposes using Python Library Sci-Kit Learn on Google Cloud Servers. 
+    • Prediction: Collaborated with Agronomy team to verify predictions made on Fresh examples. The accuracy varied depending upon the Crop and Stage. Average accuracy was found to be approximately 75%. 
